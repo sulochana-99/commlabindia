@@ -36,7 +36,7 @@
         </div>
         <div class="form-container" id="formContainer">
             <div class="form-content">
-                <span class="close-button" id="closeForm">&times;</span>
+                <span class="close-button" id = "closeForm">&times;</span>
                 <h3 class="form-heading">Register For The FREE Webinar</h3>
                 
                 <form id="registrationForm">
@@ -117,6 +117,7 @@
                 11 am Eastern | 8 am Pacific<br>
                 Duration: 90 Minutes</h4>
         </strong>
+        
         <center><button class="button secureButton">Secure your seat<br><s> $997 VALUE</s> - FREE!</button></center>
     </div>
     <footer class="page-footer">
@@ -132,19 +133,21 @@
         </div>
     </footer>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const secureButton = document.querySelector(".secureButton");
-            const formContainer = document.getElementById("formContainer");
-            const closeForm = document.getElementById("closeForm");
-            const registrationForm = document.getElementById("registrationForm");
-    
+         document.addEventListener("DOMContentLoaded", function () {
+        const secureButtons = document.querySelectorAll(".secureButton");
+        const formContainer = document.getElementById("formContainer");
+        const closeForm = document.getElementById("closeForm");
+        const registrationForm = document.getElementById("registrationForm");
+
+        secureButtons.forEach(function (secureButton) {
             secureButton.addEventListener("click", function () {
                 formContainer.style.display = "block";
             });
-    
-            closeForm.addEventListener("click", function () {
-                formContainer.style.display = "none";
-            });
+        });
+
+        closeForm.addEventListener("click", function () {
+            formContainer.style.display = "none";
+        });
     
             function displayError(field, message) {
                 const errorDiv = document.getElementById(field + "error");
