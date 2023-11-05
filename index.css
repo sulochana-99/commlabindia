@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     font-family: Arial, sans-serif;
     background-image: url('https://resources.commlabindia.com/hubfs/webinars/corporate-training-with-ai-banner.jpg');
     background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
 }
 
 .main-heading {
@@ -20,12 +23,6 @@ body {
     line-height: 36px;
 }
 
-@media (max-width: 768px) {
-    .main-heading {
-        font-size: 18px;
-        padding: 10px;
-    }
-}
 
 .container {
     display: flex;
@@ -41,12 +38,14 @@ body {
 .image img {
     max-width: 100%;
     height: auto;
+    margin-left:200px;
 }
 
 .matter {
     flex: 1;
     text-align: center;
     color: black;
+    margin-left: 0px;
     background-image: url('https://resources.commlabindia.com/hubfs/webinars/corporate-training-with-ai-texture-bg.jpg');
 }
 
@@ -60,37 +59,92 @@ body {
     margin: 5px 0;
     color: #2e475d;
 }
-
-.large-text {
-    font-size: 50px;
-    color: maroon;
+hr{
+    width:400px;
+}
+.large-text{
+    font-size: 46px;
+   color:  #bf2b2b;
     padding: 15px;
+    font-weight: 600;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0 0 1rem;
+    text-align: center;
+    margin: 0 0 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.custom-list li {
+    font-size: 18px;
+    color: #2e475d;
+    list-style: none;
+    margin: 10px 0;
+
     
 }
 
 
+.custom-list li::before {
+    content: "";
+    width: 20px; 
+    height: 20px; 
+    background-image: url('https://resources.commlabindia.com/hubfs/cli-main-site/pillar-pages/checkmark-orange.svg');
+    background-size: contain;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    
 
-.custom-list li {
-    font-size: 18px;
-    color: #2e475d;
-    margin: 10px 0;
-    padding-left: 40px; 
-    background-repeat: no-repeat;
-    background-size: 32px 32px;
-    list-style-type: none;
 }
+
+
+.custom-list li::before {
+    width: 20px; 
+    height: 20px; 
+}
+
+.custom-list li::before {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.matter {
+    flex: 1;
+    text-align: center;
+    color: black;
+    background-image: url('https://resources.commlabindia.com/hubfs/webinars/corporate-training-with-ai-texture-bg.jpg');
+    padding: 20px;
+}
+
 
 .banner {
     background-color: black;
-    font-size: 20px;
     color: white;
     padding: 10px;
     margin: 25px;
+    font-size: 18px;
+    text-align: center;
+}
+.custom-list.list {
+    flex-wrap: wrap;
+    align-items: center;
+    
 }
 
+.custom-list.list li {
+    font-size: 18px;
+    
+    color: #2e475d;
+
+}
 .bold-text {
     font-weight: bold;
     color: #2e475d;
+
 }
 
 .free-text {
@@ -100,24 +154,15 @@ body {
 
 .button {
     margin: 20px;
-    width: 200px;
-    height: 50px;
+    width: 300px;
+    height: 70px;
     background-color: #bf2b2b;
+    border: none;
     border-radius: 5px;
     color: white;
+    font-size: 24px;
 }
 
-.form-container {
-    display: none;
-    position: absolute;
-    background-image: url("https://resources.commlabindia.com/hubfs/webinars/corporate-training-with-ai-texture-bg.jpg");
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-left: 450px;
-    width: 550px;
-    height: 300px;
-}
 
 .form-content {
     text-align: center;
@@ -130,9 +175,18 @@ body {
     cursor: pointer;
 }
 
-.blur-background {
-    filter: blur(0.2px);
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); 
+    z-index: 999;
 }
+
+
 
 .banner-image {
     margin: auto;
@@ -141,14 +195,49 @@ body {
 }
 
 .content-section {
-    background-image: url('https://resources.commlabindia.com/hubfs/webinars/corporate-training-with-ai-grey-banner.jpg')!important;
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-image: url('https://resources.commlabindia.com/hubfs/webinars/corporate-training-with-ai-grey-banner.jpg');
+    background-attachment: fixed;
+    margin: 0;
     background-position: center;
+    color: #2e475d;
     padding: 50px;
-    color: white;
+    
+}
+
+.heading{
     text-align: center;
 }
+.list {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.list li {
+    font-size: 20px;
+    color: #2e475d;
+    margin: 20px 0;
+    position: relative;
+    margin-left: 300px ;
+   
+}
+
+.list li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url('https://resources.commlabindia.com/hubfs/cli-main-site/pillar-pages/checkmark-orange.svg');
+    background-size: contain;
+    display: inline-block;
+    
+    vertical-align: middle;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .Ceo {
     background-color: black; 
     color: white; 
@@ -156,8 +245,34 @@ body {
     justify-content: space-around;
     max-width: 100%; 
     padding: 20px;
+    padding-top: 50px;
 }
+.content-heading {
+    font-size: 32px;
+    padding: 20px;
+    font-weight: 600px;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    
 
+}
+.sub-heading {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #2e475d;
+    text-align: center;
+}
+.mentor-name{
+    font-family: Lexend Deca, serif;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    text-transform: none;
+    text-align: left;
+    
+}
 .Ceo > div {
     text-align: center;
     margin: 10px;
@@ -168,12 +283,43 @@ body {
     max-width: 100%;
     height: auto;
 }
-
-.Ceo p {
-    font-size: 18px;
-    margin: 10px 0;
+.Ceo p{
+    
+        font-size: 20px;
+        margin: 10px 0;
+        color: white;
+        text-align: left;
+        color: #ffff;
+        font-family: 'Lexend Deca', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.5;
 }
-
+.mentor-name{
+    font-family: 'Lexend Deca', serif;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    text-transform: none;
+    text-align: left;
+    margin: 0 0 3rem;
+    padding-top: 5px;
+    
+}
+h6 {
+    
+    font-style: normal;
+    font-weight: 500px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: none;
+    text-align: left;
+    margin: 0 0 1rem;
+}
 
 .page-footer {
     background-color: black; 
@@ -181,7 +327,31 @@ body {
     text-align: center;
     padding: 20px;
 }
+.training{
+    color:#ffff;
+    margin: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+.training h6{
+    text-align: center;
+    font-size: 20px;
+    text-transform: none;
+    line-height: 1.4;
+    box-sizing: border-box;
+    text-transform: none;
+    padding-top: 15px;
+}
+.training h4{
+    
+        font-family: Lexend Deca, serif;
+        font-style: normal;
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 26px;
+        text-transform: none;
 
+}
 
 .page-footer .footer-content {
     display: inline-block;
@@ -227,18 +397,22 @@ body {
     cursor: pointer;
 }
 
-
 .form-container {
     display: none;
-    position: absolute;
+    position: fixed;
     background-image: url("https://resources.commlabindia.com/hubfs/webinars/corporate-training-with-ai-texture-bg.jpg");
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-left: 450px;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
     width: 550px;
-    height: 300px;
+    max-width: 90%; 
+    height: auto;
 }
+
+
 .form-content {
     text-align: center;
 }
@@ -249,26 +423,139 @@ body {
     right: 10px;
     cursor: pointer;
 }
-.blur-background {
-    filter: blur(0.2px);
+
+
+#registrationForm {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#registrationForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#registrationForm input[type="text"],
+#registrationForm input[type="email"],
+#registrationForm input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#registrationForm .name-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+#registrationForm .name-inputs input {
+    width: 48%; 
+}
+
+#registrationForm input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #bf2b2b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup h3 {
+    margin: 0;
+}
+
+.popup button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background: #0056b3;
 }
 
 
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        padding-right: 0;
+    .list li {
+        margin-left: 0px;
     }
 
+    .list li::before {
+        left: 5;
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+   
+    .container {
+        flex-direction: column;
+    }
+    
     .image {
-        order: 2; 
+        margin: 0;
+        text-align: center;
+    }
+
+    .image img {
+        margin-left: 0;
     }
 
     .matter {
-        order: 1; 
+        margin-left: 35px;
+        
     }
 
+    .banner-image {
+        margin-top: 15px;
+        background-image: url('https://resources.commlabindia.com/hubfs/webinars/corporate-training-with-ai-banner-1.jpg');
+    }
+    .banner-image img {
+        max-width: 80%;
+        margin: 0 auto; 
+    }
+    .form-container {
+        width: 80%;
+        padding: 20px;
+        top: 50%; 
+        max-height: 80%; 
+        overflow-y: auto; 
+    }
+    
     .Ceo {
-        flex-direction: column; 
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Ceo > div {
+        max-width: 100%;
     }
 }
+
+

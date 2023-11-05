@@ -20,32 +20,40 @@
         </div>
         <div class="matter">
             <p class="sub-heading">The Top Trending Topic of the Year</p>
-            <p class="large-text" style="font-size: larger;">Unleashing the Potential of AI in Corporate Training</p>
+            <h1 class="large-text">Unleashing the Potential of AI in Corporate Training</h1>
+            <center><hr></center>
             <ul class="custom-list">
-                <li>Learn how AI is helping corporates upskill and reskill workforce</li>
+                <li>Learn how AI is helping corporates upskill and reskill the workforce</li>
                 <li>Walk away with tips, tools, and resources to get started with AI-empowered training</li>
             </ul>
-            <p class="banner" style="margin: 25px;">JOIN DR RK Prasad, Shalini, Rajesh LIVE</p>
+            <p class="banner" style="margin: 30px;">JOIN DR RK Prasad, Shalini, Rajesh LIVE</p>
             <p class="bold-text">Tuesday, January 09, 2024</p>
             <p class="bold-text">11 AM Eastern | 8 AM Pacific</p>
             <p class="bold-text"><s>$997 VALUE</s> <span class="free-text">FREE!</span></p>
-            <button class="button" id="secureButton">Secure your seat</button>
+            
+            <button class="button secureButton"><strong>Secure your seat</strong></button>
+        
         </div>
         <div class="form-container" id="formContainer">
             <div class="form-content">
                 <span class="close-button" id="closeForm">&times;</span>
                 <h3 class="form-heading">Register For The FREE Webinar</h3>
+                
                 <form id="registrationForm">
                     <label for="firstName">First Name:</label>
-                    <input type="text" id="firstName" name="firstName" required>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter Your First Name">
+                    <div id="firstNameerror" class="error"></div>
                     <label for="lastName">Last Name:</label>
-                    <input type="text" id="lastName" name="lastName" required>
+                    <input type="text" id="lastName" placeholder="Enter Your Last Name" name="lastName">
+                    <div id="lastnameerror" class="error"></div>
                     <br><br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">Business Mail:</label>
+                    <input type="email" id="email" placeholder="Enter Your Business Mail" name="email">
+                    <div id="emailerror" class="error"></div> <!-- Corrected ID here -->
                     <br><br>
                     <label>Phone Number:</label>
-                    <input type="number" id="phoneNumber" name="phoneNumber" required>
+                    <input type="number" id="phoneNumber" placeholder="Enter Your Phone Number" name="phoneNumber">
+                    <div id="phonenumbererror" class="error"></div>
                     <br><br>
                     <input type="submit" value="Submit">
                 </form>
@@ -56,30 +64,29 @@
         <img src="https://resources.commlabindia.com/hubfs/webinars/logos-v2.png"/>
     </div>
     <div class="content-section">
-        <h1 class="content-heading">YOU WILL LEARN:</h1>
-        <ul class="custom-list">
-            <li>Evolution of AI and Corporate Training</li>
-            <li>How AI can close skills gaps with rapid upskilling and reskilling</li>
-            <li>Steps to integrate AI tools in training programs</li>
-            <li>Challenges and opportunities with AI implementation</li>
-            <li>Roadmap to align training with business goals</li>
-            <li>Live action – creating assets with Vyond Go, Synthesia, Quizbot</li>
-            <li>Best way Learning Architects can use AI</li>
+        <h1 class="heading">YOU WILL LEARN:</h1>
+        <ul class="list">
+            <li><strong>Evolution of AI and Corporate Training</strong></li>
+            <li><strong>How AI can close skills gaps with rapid upskilling and reskilling</strong></li>
+            <li><strong>Steps to integrate AI tools in training programs</strong></li>
+            <li><strong>Challenges and opportunities with AI implementation</strong></li>
+            <li><strong>Roadmap to align training with business goals</strong></li>
+            <li><strong>Live action – creating assets with Vyond Go, Synthesia, Quizbot</strong></li>
+            <li><strong>Best way Learning Architects can use AI</strong></li>
         </ul>
         <h1 class="content-heading">Unleashing the Potential of AI in Corporate Training</h1>
         <h2 class="sub-heading">The Impact of AI on L&D – Insights and Applications</h2>
         <h2 class="sub-heading">Tuesday, January 09, 2024</h2>
         <h2 class="sub-heading">11 am Eastern | 8 am Pacific</h2>
         <h2 class="sub-heading">Duration: 90 Minutes</h2>
-        <button class="button">Secure your seat</button>
+        <center><button class="button secureButton">Secure your seat<br><s> $997 VALUE</s> - FREE!</button></center>
     </div>
-    
-    <div class="Ceo" >
-       
+
+    <div class="Ceo">
         <div class="image1">
             <img src="https://resources.commlabindia.com/hubfs/webinars/rk-prasad-ai-webinar.jpg" />
-            <p>RK Prasad</p>
-            <p>CEO & Co-Founder</p>
+            <h3 class="mentor-name">RK Prasad</h3>
+            <h6>CEO & Co-Founder</h6>
             <p>RK has nurtured CommLab India from concept to commercial success, and is responsible for formulating the business strategy. He is also responsible for nurturing customer relationships.</p>
             <p>An entrepreneur at heart, RK has 35 years of experience in Sales, Corporate training, University teaching, and eLearning. He regularly conducts seminars and webinars for customers across the world on various topics of technology-enhanced learning.</p>
             <p>RK holds a PhD in Mobile Learning from Lancaster University, UK, and an MBA.</p>
@@ -87,32 +94,33 @@
         </div>
         <div class="image2">
             <img src="https://resources.commlabindia.com/hubfs/cli-main-site/about-us/Shalini.jpg" />
-            <p>Shalini Merugu</p>
-            <p>Director - Learning Solutions</p>
+            <h3 class="mentor-name">Shalini Merugu</h3>
+            <h6>Director - Learning Solutions</h6>
             <p>Shalini is a versatile learning design professional with 16+ years of experience in instructional design (ILT, VILT, and eLearning).</p>
             <p>Her experience in designing eLearning solutions along with designing and delivering instructor-led training helps her leverage the strengths of each medium to consistently create impactful training solutions, ensuring that nothing is lost when converting from one format to another.</p>
             <p>Apart from improving the quality of learning solutions, she also conducts customer education workshops at customer sites globally and presents webinars on learning design.</p>
         </div>
-        <div class="image3">
+        <div class =  "image3">
             <img src="https://resources.commlabindia.com/hubfs/cli-main-site/about-us/rajesh-v4.jpg" />
-            <p>Rajesh Venkata</p>
-            <p>Director – Innovation</p>
+            <h3 class="mentor-name">Rajesh Venkata</h3>
+            <h6>Director – Innovation</h6>
             <p>Rajesh started his career as a Quality Executive in 2008, and gained expertise in eLearning, digital content delivery, and project management, over these 15+ years.</p>
             <p>Rajesh has an excellent track record of team management and operational planning, along with good knowledge of eLearning authoring tools such as Storyline, Captivate, and Lectora.</p>
             <p>Well-experienced in managing multiple projects for global clients, Rajesh has a keen eye for trends in the tech-enabled learning space. This made him the natural choice for the current role, where he researches the latest tools and tech, and guides the CommLab India team in leveraging them to address training needs faster, better, and er.</p>
         </div>
     </div>
-    <div >
-        <h1 style="color: white; text-align: center; margin-top: 20px;" >Unleashing the Potential of AI in Corporate Training</h1>
-        <h2  style="color: white; text-align: center;" >The Impact of AI on L&D – Insights and Applications</h2>
-         <h2 style="color: white; text-align: center;" >Tuesday, January 09, 2024<br>
-        11 am Eastern | 8 am Pacific<br>
-        Duration: 90 Minutes</h2>
-        <center><button class="button" id="secureButton">Secure your seat</button></center>
-
+    <div class="training">
+        <h1>Unleashing the Potential of AI in Corporate Training</h1>
+        <h6>The Impact of AI on L&D – Insights and Applications</h6>
+        <strong>
+            <h4>Tuesday, January 09, 2024<br>
+                11 am Eastern | 8 am Pacific<br>
+                Duration: 90 Minutes</h4>
+        </strong>
+        <center><button class="button secureButton">Secure your seat<br><s> $997 VALUE</s> - FREE!</button></center>
     </div>
     <footer class="page-footer">
-        <div class="footer-content">
+        <div class "footer-content">
             <a href="https://www.commlabindia.com/">
                 <img src="https://resources.commlabindia.com/hubfs/commlab_logo/cl-logo-final-white.png" alt="CommLab India Logo">
             </a>
@@ -124,55 +132,76 @@
         </div>
     </footer>
     <script>
-        var button = document.getElementById("secureButton");
-   var formContainer = document.getElementById("formContainer");
-   var closeFormButton = document.getElementById("closeForm");
-   var registrationForm = document.getElementById("registrationForm");
-   button.addEventListener("click", function() {
-       formContainer.style.display = "block";
-       document.body.classList.add('blur-background');
-   });
-
-
-   closeFormButton.addEventListener("click", function() {
-       formContainer.style.display = "none";
-       document.body.classList.remove('blur-background');
-   });
-
-  
-   window.addEventListener("click", function(event) {
-       if (event.target == formContainer) {
-           formContainer.style.display = "none";
-           document.body.classList.remove('blur-background');
-       }
-   });
-
- 
-   registrationForm.addEventListener("submit", function(event) {
-       event.preventDefault(); 
-
-       var nameInput = document.getElementById("name");
-       var emailInput = document.getElementById("email");
-
-       if (nameInput.value.trim() === "") {
-           alert("Name is required");
-           nameInput.focus();
-       } else if (!isValidEmail(emailInput.value)) {
-           alert("Please enter a valid email address");
-           emailInput.focus();
-       } else {
-          
-           alert("Form submitted successfully!");
-           formContainer.style.display = "none";
-           document.body.classList.remove('blur-background');
-       }
-   });
-
- 
-   function isValidEmail(email) {
-       var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-       return emailPattern.test(email);
-   }
-   </script>
-</body>
+        document.addEventListener("DOMContentLoaded", function () {
+            const secureButton = document.querySelector(".secureButton");
+            const formContainer = document.getElementById("formContainer");
+            const closeForm = document.getElementById("closeForm");
+            const registrationForm = document.getElementById("registrationForm");
+    
+            secureButton.addEventListener("click", function () {
+                formContainer.style.display = "block";
+            });
+    
+            closeForm.addEventListener("click", function () {
+                formContainer.style.display = "none";
+            });
+    
+            function displayError(field, message) {
+                const errorDiv = document.getElementById(field + "error");
+                if (message) {
+                    errorDiv.textContent = message;
+                } else {
+                    errorDiv.textContent = ""; 
+                }
+            }
+    
+            registrationForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+               
+                const firstName = document.getElementById("firstName").value;
+                const lastName = document.getElementById("lastName").value;
+                const email = document.getElementById("email").value;
+                const phoneNumber = document.getElementById("phoneNumber").value;
+    
+                const errorFields = ["firstName", "lastName", "email", "phoneNumber"];
+    
+                let isValid = true;
+    
+                if (!firstName) {
+                    displayError("firstName", "First Name cannot be empty.");
+                    isValid = false;
+                }
+    
+                if (!lastName) {
+                    displayError("lastname", "Last Name cannot be empty.");
+                    isValid = false;
+                }
+    
+                const emailPattern = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+            if (!emailPattern.test(email)) {
+                displayError("email", "Please enter a valid email address.");
+                isValid = false;
+            } else {
+                displayError("email", "");
+            }
+                const phonePattern = /^[0-9]{10}$/; 
+            if (!phonePattern.test(phoneNumber)) {
+                displayError("phonenumber", "Please enter a valid 10-digit phone number.");
+                isValid = false;
+            } else {
+                displayError("phonenumber", "");
+            }
+    
+                if (isValid) {
+                    
+                    registrationForm.submit();
+                } else {
+                    
+                    displayError("submit", "Please fill in all the required fields.");
+                }
+            });
+        });
+    </script>
+    
+    </body>
 </html>
